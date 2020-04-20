@@ -2,9 +2,13 @@
 
 <html>
     <head>
+        <script defer src="javascript/pictureView.js"></script>
+        <!-- <script src="backToTop.js"></script> -->
         <meta charest="utf-8">
         <title>Images</title>
-        <link rel="stylesheet" type = "text/css" href="style.css">
+        
+        <link rel="stylesheet" type = "text/css" href="style/style.css">
+        <!-- <script src="backToTop.js"></script> -->
     </head>
     <body>
         <div class="navheader">
@@ -15,7 +19,7 @@
                     </ul>
                 </li>
     
-                <li class="header_ul_pages"><a href="images.html">IMAGES</a>
+                <li class="header_ul_pages"><a class = "active" href="images.html">IMAGES</a>
                     <ul class="header_ul_ul">
                         
                     </ul>
@@ -28,8 +32,8 @@
                 <li class="header_ul_blog"><a href="projects.html">PROJECTS</a>
                     <ul class="header_ul_ul">
                         
-                        <li><a href="https://github.com/ShengjiaYu/GourmetSB">Github-Snake</a></li>
-                        <li><a href="https://github.com/ShengjiaYu/GourmetSB">Github-GourmetSB</a></li>
+                            <li><a href="https://github.com/ShengjiaYu/snake_revised_v">Snake</a></li>
+                            <li><a href="https://github.com/ShengjiaYu/GourmetSB">GourmetSB</a></li>
                         
                     </ul>
                 </li>
@@ -41,37 +45,105 @@
     <div class="box">
         
     <ul>
+     
+      <li>
+        <div class="deatil">
+           <h2>Chinese Noodles</h2>
+           <p>Delivery ordered in LA</p>
+           <a href="#"  class = "pics" >Large picture</a>
+        </div>
+        <img src="img/View3.jpg" width="300px" height="360px" alt=""/>
+      </li>
+
+      <li>
+        <div class="deatil">
+           <h2>Mountain View</h2>
+           <p>Picture taken on the tram to the Getty</p>
+           <a href="#"  class = "pics" >Large picture</a>
+        </div>
+        <img src="img/View4.jpg" width="300px" height="360px" alt=""/>
+      </li>
+
       <li>
         <div class="deatil">
            <h2>Stir-fried Squid</h2>
            <p>Self-made squid during quarantine</p>
-           <a href="img/Food2.jpg">Large picture</a>
+           <a href="#"  class = "pics" >Large picture</a>
         </div>
-        <img src="img/Food2.jpg" width="300px" height="360px" alt=""/>
+        <img src="img/View5.jpg" width="300px" height="360px" alt=""/>
       </li>
-  
-      
-    <li>
+
+      <li>
         <div class="deatil">
-           <h2>Chinese Noodles</h2>
-           <p>Delivery ordered in LA</p>
-           <a href="img/Food1.jpg">Large picture</a>
+           <h2>Online Pictures</h2>
+           <p>Picture used before 1</p>
+           <a href="#"  class = "pics" >Large picture</a>
         </div>
-        <img src="img/Food1.jpg" width="300px" height="360px" alt=""/>
+        <img src="img/View6.jpg" width="300px" height="360px" alt=""/>
       </li>
-  
-    
-    <li>
+
+      <li>
         <div class="deatil">
-           <h2>Mountain View</h2>
-           <p>Picture taken on the tram to the Getty</p>
-           <a href="img/View1.jpg">Large picture</a>
+           <h2>Online Pictures</h2>
+           <p>Picture used before 2</p>
+           <a href="#"  class = "pics" >Large picture</a>
         </div>
-        <img src="img/View1.jpg" width="300px" height="360px" alt=""/>
+        <img src="img/View7.jpg" width="300px" height="360px" alt=""/>
       </li>
       
-  
+      <li>
+        <div class="deatil">
+            <h2>Online Pictures</h2>
+            <p>Picture used before 3</p>
+            <a href="#"  class = "pics" >Large picture</a>
+        </div>
+        <img src="img/View8.jpg" width="300px" height="360px" alt=""/>
+      </li>
+      <li>
+            <div class="deatil">
+                <h2>Online Pictures</h2>
+                <p>Picture used before 4</p>
+                <a href="#"  class = "pics" >Large picture</a>
+            </div>
+            <img src="img/View9.jpg" width="300px" height="360px" alt=""/>
+      </li>
+          <li>
+            <div class="deatil">
+                <h2>Online Pictures</h2>
+                <p>Picture used before 5</p>
+                <a href="#"  class = "pics" >Large picture</a>
+            </div>
+            <img src="img/View10.jpg" width="300px" height="360px" alt=""/>
+        </li>
+        
     </div>
+    
+    <button onclick="topFunction()" id="myBtn" title="Back to top">Back to top</button>
+
+    <script>
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+
+
+
     
 	
     </body>

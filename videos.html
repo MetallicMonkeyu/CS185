@@ -2,7 +2,8 @@
 <html>
 <head>
 	<title>Videos</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script defer src="javascript/videoView.js"></script>
 </head>
 <body>
 	<div class="navheader">
@@ -18,7 +19,7 @@
                     
                 </ul>
             </li>
-            <li class="header_ul_portfollo"><a href="videos.html">VIDEOS</a>
+            <li class="header_ul_portfollo"><a class = "active" href="videos.html">VIDEOS</a>
                 <ul class="header_ul_ul">
                     
                 </ul>
@@ -26,8 +27,8 @@
             <li class="header_ul_blog"><a href="projects.html">PROJECTS</a>
                 <ul class="header_ul_ul">
                     
-                    <li><a href="https://github.com/ShengjiaYu/GourmetSB">Github-Snake</a></li>
-                    <li><a href="https://github.com/ShengjiaYu/GourmetSB">Github-GourmetSB</a></li>
+                        <li><a href="https://github.com/ShengjiaYu/snake_revised_v">Snake</a></li>
+                        <li><a href="https://github.com/ShengjiaYu/GourmetSB">GourmetSB</a></li>
                     
                 </ul>
             </li>
@@ -35,7 +36,8 @@
     </div>
 	
 		
-	<h1> Videos </h1>
+    <h1> Videos </h1>
+    <div class = "videos">
             
     <div class="videoslayout">
         <video src="Videos/LOL_replay1.webm" controls></video>
@@ -47,6 +49,28 @@
         <iframe src="https://www.youtube.com/embed/_3YNL0OWio0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         
     </div>
-</div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Back to top">Back to top</button>
+<script>
+		//Get the button
+		var mybutton = document.getElementById("myBtn");
+		
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+		
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			mybutton.style.display = "block";
+			} else {
+			mybutton.style.display = "none";
+			}
+		}
+		
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+</script>
 </body>
 </html>
