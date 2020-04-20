@@ -13,8 +13,8 @@ blur.addEventListener('click', e => {
             return
         }
         console.log(e.currentTarget.querySelector('video'))
-        e.currentTarget.querySelector('video').pause();
-        e.currentTarget.querySelector('video').autoplay = false;
+         e.currentTarget.querySelector('video').pause();
+        // e.currentTarget.querySelector('video').autoplay = false;
         blur.classList.remove('active')
         
     }
