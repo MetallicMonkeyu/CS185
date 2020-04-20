@@ -4,6 +4,7 @@
 	<title>Videos</title>
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <script defer src="javascript/videoView.js"></script>
+    
 </head>
 <body>
 	<div class="navheader">
@@ -40,9 +41,9 @@
     <div class = "videos">
             
     <div class="videoslayout">
-        <video src="Videos/LOL_replay1.webm" controls></video>
-        <video src="Videos/LOL_replay2.webm" controls></video>
-        <video src="Videos/LOL_replay3.webm" controls></video>
+        <video src="Videos/LOL_replay1.webm" controls autoplay class = 'vid'></video>
+        <video src="Videos/LOL_replay2.webm" controls="controls" class = 'vid'></video>
+        <video src="Videos/LOL_replay3.webm" controls="controls" class = 'vid'></video>
         <iframe src="https://www.youtube.com/embed/IuS5huqOND4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <iframe src="https://www.youtube.com/embed/QJaLv7XTFTY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <iframe src="https://www.youtube.com/embed/wsey3HvBHic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -50,6 +51,13 @@
         
     </div>
     </div>
+
+  
+
+    
+              
+
+    
     <button onclick="topFunction()" id="myBtn" title="Back to top">Back to top</button>
 <script>
 		//Get the button
@@ -70,7 +78,10 @@
 		function topFunction() {
 			document.body.scrollTop = 0;
 			document.documentElement.scrollTop = 0;
-		}
+        }
+        
+        
+
 </script>
 </body>
 </html>
