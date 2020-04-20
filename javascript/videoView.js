@@ -33,8 +33,10 @@ videos.forEach(video => {
         const vid = document.createElement('video')
         
          
-        vid.autoplay = true;
+        
         vid.src = video.src
+        video.pause();
+        vid.autoplay = true;
         while (blur.firstChild) {
             
             blur.removeChild(blur.firstChild)
